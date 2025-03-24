@@ -109,9 +109,13 @@ Instead of the HTTP API for controls in v1, there appears to be some kind of JSO
 `http://192.168.99.1/ajax/command.json?command1=mebolink_message_send(!ARABCDEFGHI)`
 `http://192.168.99.1/ajax/command.json?command1=mouth_led_state()`
 
-This API was used to make the Mebo2.0 compatible with the now defunct Letsrobot/Runmyrobot website as seen here:
+A company called Ximpatico seemed to use the Mebo 2.0 and its firmware to develop a robot called the Nabot AI. They published an API here:
 
-- <https://github.com/meborobot/runmyrobot/blob/3c5ae55b01c5a057554905ef677a27aaa0ed1f7c/mebo/letsrobot_to_mebo_converter.py>
+- <https://github.com/Ximpatico/NabotPythonAPI>
+
+This code has been updated and confirmed to work with the Mebo 2.0 here:
+
+- <https://github.com/csev1755/python-nabot-mebo2>
 
 Further investigation shows that it is ArduPilot software. 
 
