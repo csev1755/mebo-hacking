@@ -8,7 +8,7 @@ Requests are made to a web server on the Mebo at port 80. They are made in the c
 
 The commands themselves follow a convention of `${component}_{direction}` for arm/wrist/claw and `move_${direction}` for motion
 
-THe command is provided as a request param to the http endpoint, with additional parameters as required to control speed, duration, etc.
+The command is provided as a request param to the http endpoint, with additional parameters as required to control speed, duration, etc.
 
 The api uses the following naming conventions for its components:
 ```
@@ -108,9 +108,14 @@ Instead of the HTTP API for controls in v1, there appears to be some kind of JSO
 
 `http://192.168.99.1/ajax/command.json?command1=mebolink_message_send(!ARABCDEFGHI)`
 `http://192.168.99.1/ajax/command.json?command1=mouth_led_state()`
+
+This API was used to make the Mebo2.0 compatible with the now defunct Letsrobot/Runmyrobot website as seen here:
+
+- <https://github.com/meborobot/runmyrobot/blob/3c5ae55b01c5a057554905ef677a27aaa0ed1f7c/mebo/letsrobot_to_mebo_converter.py>
+
 Further investigation shows that it is ArduPilot software. 
 
-- <https://discuss.ardupilot.org/t/how-to-use-json-command-to-read-attitude-quaternion-on-web-browser/84529https://discuss.ardupilot.org/t/how-to-use-json-command-to-read-attitude-quaternion-on-web-browser/84529>
+- <https://discuss.ardupilot.org/t/how-to-use-json-command-to-read-attitude-quaternion-on-web-browser/84529>
 - <https://docs.google.com/document/d/12IQFXDRIif06BiriHSCGdiJGZ6zsQ_phQsG_iI6_MAo/edit?pli=1#heading=h.gvvvomuy1uik>
 
 
